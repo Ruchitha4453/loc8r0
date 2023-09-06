@@ -6,7 +6,7 @@ if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGODB_URI;
 }
 mongoose.connect(dbURI);
-
+2
 
 mongoose.connection.on('connected', () => {
   console.log(`Mongoose connected`);
